@@ -1,5 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+}
+
 h1 {
-  font-family: 'segoi ui',roboto,helvetica,arial,sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 4rem;
   margin-top: 3rem;
   margin-bottom: 0;
@@ -17,7 +25,7 @@ h1 a:visited {
 }
 
 h2 {
-  font-family: 'segoe ui',roboto,helvetica,arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   margin-top: 2.5rem;
@@ -35,16 +43,28 @@ h2 a:visited {
 }
 
 p {
-  font-family: 'segoe ui',roboto,helvetica,arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5rem;
   font-size: 1.2rem;
 }
 
 nav {
-  font-family: 'segoe ui',roboto,helvetica,arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 2rem;
   font-size: 1.5rem;
   line-height: 3rem;
+}
+
+.main-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.main-nav li {
+  margin: 0.5rem;
 }
 
 nav a:link {
@@ -62,7 +82,7 @@ nav a:visited {
 }
 
 footer p {
-  font-family:'segoe ui',roboto,helvetica,arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height:3rem;
 }
 
