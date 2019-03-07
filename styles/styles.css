@@ -129,3 +129,106 @@ img {
 img:hover {
   opacity: 0.6;
 }
+
+
+
+/* Form Styles */
+
+form {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input, select, textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 0.5rem;
+}
+
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+  width: 15em;
+  height: 2em;
+  margin-top: 2rem;
+}
+
+input {
+  border-radius: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+fieldset legend {
+  margin-left: -0.7rem;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lightblue;
+}
+
+.checkbox label:hover input ~ .checkmark {
+  background-color: darkblue;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: darkblue;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
